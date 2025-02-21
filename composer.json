@@ -1,0 +1,43 @@
+{
+    "name": "dft/silvercommerce-google-analytics-ecommerce",
+    "description": "Adds Google ecommerce tracking to relevent views of a SilverCommerce store",
+    "type": "silverstripe-vendormodule",
+    "homepage": "https://github.com/Dean-Forest-Tech/silvercommerce-google-analytics-ecommerce",
+    "keywords": [
+        "silverstripe",
+        "TagManager",
+        "Google Analytics",
+        "Ecommerce",
+        "Goals"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Dean Forest Tech",
+            "homepage": "https://dean-forest-tech.uk"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Dean-Forest-Tech/silvercommerce-google-analytics-ecommerce/issues"
+    },
+    "require": {
+        "sminnee/tagmanager": "1.x-dev",
+        "silvercommerce/catalogue-frontend": "^1",
+        "silvercommerce/shoppingcart": "^1",
+        "silvercommerce/orders-admin": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DFT\\SilverCommerce\\GoogleAnalyticsEcommerce\\": "src/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs -s src/ tests/"
+    },
+    "extra": {
+        "expose": [
+            "client/dist"
+        ]
+    },
+    "minimum-stability": "dev"
+}
