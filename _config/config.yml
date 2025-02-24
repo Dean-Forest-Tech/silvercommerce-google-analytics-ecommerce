@@ -1,0 +1,15 @@
+---
+Name: googleanalyticsecommerceconfig
+---
+
+SilverCommerce\CatalogueAdmin\Model\CatalogueProduct:
+  extensions:
+    - DFT\SilverCommerce\GoogleAnalyticsEcommerce\ProductExtension
+
+SilverCommerce\OrdersAdmin\Model\Estimate:
+  extensions:
+    - DFT\SilverCommerce\GoogleAnalyticsEcommerce\EstimateExtension
+
+SilverCommerce\OrdersAdmin\Model\LineItem:
+  extensions:
+    - DFT\SilverCommerce\GoogleAnalyticsEcommerce\LineItemExtension
